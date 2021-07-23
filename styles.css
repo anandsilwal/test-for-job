@@ -1,0 +1,187 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+button {
+  background: #FFFFFF;
+  border: none;
+}
+
+h3 {
+  color: #0078B3;
+}
+
+img {
+    width:300px;
+    height:300px;
+}
+p {
+    text-align:justify;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  align-content: center;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item {
+  padding: 10px;
+  flex: 50%;
+}
+
+.responsive {
+  max-width: 438px;
+}
+
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  background: #FFFFFF;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.tablinks {
+  font-family: Gotham;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0078B3;
+}
+
+.tab button.active {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .flex-container-data {
+    height:500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+ }
+
+  .flex-container-data>div:nth-child(1) {
+    width: 75%
+  }
+
+  .flex-container-data>div:nth-child(2) {
+  width:74%
+  }
+
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 375px) {
+  .tab button.active {
+    border-bottom: 1px solid black;
+  }
+}
+/*This is for mobile*/
+@media (max-width: 576px) {
+
+  div > p {
+      min-width:350px;
+      text-align:justify;
+  }
+  img {
+    width: 40%;
+    height: 40%;
+    margin-right: auto;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-container-data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .flex-container-data :nth-child(1) {
+    order: 1; width:100%;
+  }
+
+  .flex-container-data :nth-child(2) {
+    order: 3;width:100%;
+  }
+
+  .flex-container-data :nth-child(3) {
+    order: 2;width:100%;
+  }
+
+  .responsive {
+    width: 40%;
+    min-width: 350px;
+    height: 40%;
+  }
+
+  .tab {
+    overflow: hidden;
+    border-left: 2px solid #ccc;
+    background: #FFFFFF;
+    border-bottom: none;
+  }
+
+    .tab button.active {
+      border-left: 1px solid black;
+      color: black;
+      border-bottom: none;
+    }
+}
+
+
+
+
+
+
+
