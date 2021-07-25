@@ -71,7 +71,7 @@ p {
 
 .tab button.active {
   color: black;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 
 
@@ -117,7 +117,7 @@ p {
 
 @media (min-width: 375px) {
   .tab button.active {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
   }
 }
 /*This is for mobile*/
@@ -173,7 +173,7 @@ p {
   }
 
     .tab button.active {
-      border-left: 1px solid black;
+      border-left: 2px solid black;
       color: black;
       border-bottom: none;
     }
